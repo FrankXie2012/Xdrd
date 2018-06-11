@@ -1,0 +1,57 @@
+@import "base"; // unslider样式重写
+
+.top-box > .unslider {
+    width: 705px;
+    float: left;
+    background: $black;
+    margin-bottom: $gap;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.top-box .slider-title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px 0;
+    text-indent: 20px;
+    color: $white;
+    background: $black;
+    opacity: 0.7;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.top-box .unslider-nav {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    z-index: 10;
+
+    li {
+        text-indent: 9999px;
+    }
+}
+
+.v-carousel {
+    height: 310px;
+    line-height: 26px;
+
+    a {
+        width: 255px;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        .date-span {
+            right: 0 !important;
+            color: $gray;
+        }
+    }
+}
