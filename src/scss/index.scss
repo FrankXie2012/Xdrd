@@ -154,7 +154,7 @@ a {
 
 .card {
     position: relative;
-    min-height: 242px;
+    min-height: 252px;
     word-wrap: break-word;
     border: 1px solid #f4f1f3;
     margin-bottom: $gap;
@@ -170,9 +170,9 @@ a {
     line-height: 40px;
     padding-left: 20px;
     padding-right: 10px;
-    color: $red;
+    color: $basic;
     background: $lightgray;
-    border-left: 5px solid $red;
+    border-left: 5px solid $basic;
 
     span {
         padding-left: 0;
@@ -213,38 +213,39 @@ a {
 
     .top-banner {
         height: 230px;
-        // background: url('../img/banner.png') center no-repeat;
         background: url("../img/xudun.png") right center no-repeat;
-
+        
         .content {
-            padding: 50px;
+            padding-top: 30px;
+            padding-left: 80px;
             color: $white;
             position: relative;
-
+            
             span {
                 line-height: 54px;
                 font-size: 30px;
-                font-family: 'cursive';
             }
-
+            
             .title {
                 position: absolute;
-                top: 55px;
-                left: 200px;
-                font-size: 35px;
-                letter-spacing: 6px;
+                top: 60px;
+                left: 230px;
+                font-size: 40px;
+                letter-spacing: 7px;
             }
 
             .website {
                 position: absolute;
-                top: 100px;
-                left: 200px;
+                top: 105px;
+                left: 230px;
+                font-family: monospace;
             }
 
             .emblem {
-                width: 104px;
-                height: 108px;
-                background: $blue;
+                width: 150px;
+                height: 150px;
+                background: url(../img/emplem.png) no-repeat center;
+                background-size: cover;
                 margin-right: 30px;
             }
         }
@@ -321,8 +322,8 @@ a {
     }
 
     .card-head {
-        border: 1px solid $red;
-        border-top: 3px solid $red;
+        border: 1px solid $basic;
+        border-top: 3px solid $basic;
         border-bottom: none;
     }
 }
@@ -640,8 +641,15 @@ a {
     margin: 20px 0;
 }
 
-.services img {
-    height: 50px;
+.services a {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 18px 32px;
+    display: inline-block;
+    color: $gray;
+    &:hover {
+        color: $orange;
+    }
 }
 
 .tab-head {
