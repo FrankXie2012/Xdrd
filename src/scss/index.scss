@@ -214,18 +214,19 @@ a {
     .top-banner {
         height: 230px;
         background: url("../img/xudun.png") right center no-repeat;
-        
+
         .content {
             padding-top: 30px;
             padding-left: 80px;
             color: $white;
             position: relative;
-            
+
             span {
                 line-height: 54px;
                 font-size: 30px;
+                text-shadow: 3px 3px 0 $dark-red, -1px -1px 0 $dark-red, 1px -1px 0 $dark-red, -1px 1px 0 $dark-red, 1px 1px 0 $dark-red;
             }
-            
+
             .title {
                 position: absolute;
                 top: 60px;
@@ -244,7 +245,7 @@ a {
             .emblem {
                 width: 150px;
                 height: 150px;
-                background: url(../img/emplem.png) no-repeat center;
+                background: url("../img/emplem.png") no-repeat center;
                 background-size: cover;
                 margin-right: 30px;
             }
@@ -630,7 +631,7 @@ a {
     margin: 10px 0;
 
     .my-card {
-        margin: 23px;
+        margin: 23px 45px;
         text-align: center;
     }
 }
@@ -647,6 +648,7 @@ a {
     padding: 18px 32px;
     display: inline-block;
     color: $gray;
+
     &:hover {
         color: $orange;
     }
